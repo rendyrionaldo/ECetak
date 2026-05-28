@@ -3,19 +3,19 @@ $page = $_GET['page'] ?? 'home';
 
 switch ($page) {
     case 'tentang':
-        $file = 'FrontEnd/us_tentang.php';
+        $file = 'FrontEnd/frontTentang.php';
         break;
     case 'produk':
-        $file = 'FrontEnd/us_produk.php';
+        $file = 'FrontEnd/frontProduk.php';
         break;
     case 'kontak':
-        $file = 'FrontEnd/us_kontak.php';
+        $file = 'FrontEnd/frontKontak.php';
         break;
     case 'daftar':
-        $file = 'FrontEnd/us_daftar.php';
+        $file = 'FrontEnd/frontDaftar.php';
         break;
     default:
-        $file = 'FrontEnd/index.php';
+        $file = 'FrontEnd/frontHome.php';
         break;
 }
 
