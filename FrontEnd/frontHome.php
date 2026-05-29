@@ -1,9 +1,13 @@
-<div class="home-content">
+<div class="user-content">
     <div class="home-opening">
         <h4>Percetakan Digital Kekinian</h4>
-        <h3>Cetak Lebih Mudah</h3>
+        <h3>Cetak Lebih Berkesan dan Mudah</h3>
         <p>Dari kartu nama hingga spanduk besar, menghasilkan setiap pesanan dengan layanan terbaik dan hasil yang memuaskan.</p>
         <h6>Explore Our Services</h6>
+        <div class="home-btn">
+            <button class="btn btn-accent" onclick="goPage('produk')">&#127912; Lihat Katalog</button>
+            <button class="btn btn-white" onclick="goPage('pesanan')">Pesan Sekarang →</button>
+        </div>
     </div>
     <div class="home-fact">
         <table>
