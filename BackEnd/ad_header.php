@@ -13,7 +13,7 @@
         </div>
         <div class="backend-judul">
             <h2>Ray Scamander</h2>
-            <h2>Pangkalpinang</h2>
+            <h2>Admin</h2>
         </div>
     </header>
 
