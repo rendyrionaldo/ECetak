@@ -1,18 +1,32 @@
-<div class="content">
-    <div class="desc-content">
-        <h3>Dashboard - Admin</h3>
-        <p>Rangkuman hasil pengelolaan produk dan pesanan yang ada</p>
-    </div>
-    <div class="desc-content2">
-        <h2>Jumlah Produk dan Pesanan</h2><br>
-        <div class="bag-total">
-            <div class="sub-bag-total">
-                <p class="des-bagian">Total Produk:</p>
-            <p class="jmlh-bagian">10</p>
-            </div>
-            <div class="sub-bag-total">
-                <p class="des-bagian">Total Pesanan:</p>
-            <p class="jmlh-bagian">5</p>
-        </div>
-    </div>
-</div>
+<?php
+$page = $_GET['page'] ?? 'home';
+
+switch ($page) {
+    case 'admin':
+        $file = 'admin/dt_admin.php';
+        break;
+    case 'produk':
+        $file = 'produk/dt_produk.php';
+        break;
+    case 'tambahProduk':
+        $file = 'produk/tambahProduk.php';
+        break;
+    case 'editProduk':
+        $file = 'produk/editProduk.php';
+        break;
+    case 'hapusProduk':
+        $file = 'produk/hapusProduk.php';
+        break;
+    case 'pesanan':
+        $file = 'pesanan/dt_pesanan.php';
+        break;
+    default:
+        $file = 'ad_header.php';
+        break;
+}
+
+require 'ad_dashboard.php';
+require 'ad_sidebar.php';
+require $file;
+require 'ad_footer.php';
+?>

@@ -21,10 +21,10 @@ if(isset($_POST['update'])){
                                     WHERE id='$id'");
 
     if (!empty($_FILES['gambar']['name'])) {
-        $folder = "../../gambar/";
+        $folder = "../gambar/";
         if (!is_dir($folder)) mkdir($folder, 0777, true);
         if (!empty($foto) && file_exists($folder . $foto)) unlink($folder . $foto);
-        $foto = uniqid() . '_' . basename($_FILES['gambar']['name']);
+        $foto = basename($_FILES['gambar']['name']);
         move_uploaded_file($_FILES['gambar']['tmp_name'], $folder . $foto);
     }
     
@@ -51,7 +51,7 @@ if(isset($_POST['update'])){
             </div>
             <div class="form-group">
                 <label for="deskripsi">Deskripsi:</label><br>
-                <textarea name="deskripsi" rows="4" value="<?= $data['deskripsi']; ?>" required></textarea><br><br>
+                <textarea name="deskripsi" rows="4" required><?= $data['deskripsi']; ?></textarea><br><br>
             </div>
             <div class="form-group">
                 <label for="harga">Harga:</label><br>
@@ -60,7 +60,7 @@ if(isset($_POST['update'])){
             <div class="form-group">
                 <label for="gambar">Gambar:</label><br>
                 <?php if ($data['gambar']): ?>
-                    <img src="../../gambar/<?= $data['gambar'] ?>"><br>
+                    <img src="../gambar/<?= $data['gambar'] ?>"><br>
                 <?php endif; ?>
                 <input type="file" name="gambar" required><br><br>
             </div>

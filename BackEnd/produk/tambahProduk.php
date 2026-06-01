@@ -1,5 +1,5 @@
 <?php
-include "../../Config/koneksi.php";
+include "../Config/koneksi.php";
 
 // Cek apakah tombol simpan sudah diklik
 if(isset($_POST['tambah'])){
@@ -8,7 +8,7 @@ if(isset($_POST['tambah'])){
     $harga  = $_POST['harga'];
     $file_name = $_FILES['gambar']['name'];
     $file_tmp = $_FILES['gambar']['tmp_name'];
-    $folder = '../../gambar/'.$file_name;
+    $folder = '../gambar/'.$file_name;
 
     //query untuk memasukan data ke tabel_produk
     $query = mysqli_query($connect, "INSERT INTO produk (nama,deskripsi,harga,gambar)

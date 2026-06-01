@@ -1,5 +1,5 @@
 <?php
-include '../../Config/koneksi.php';
+include '../Config/koneksi.php';
 
 //ambil data guru
 $query = mysqli_query($connect, "SELECT * FROM produk");

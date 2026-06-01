@@ -1,6 +1,6 @@
 <?php
 //koneksi tetap diperlukan ke query
-include '../../Config/koneksi.php';
+include '../Config/koneksi.php';
 
 //menangkap ID dari URl
 if(isset($_GET['id'])){

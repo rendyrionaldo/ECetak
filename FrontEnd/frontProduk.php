@@ -1,3 +1,10 @@
+<?php
+include 'Config/koneksi.php';
+
+//ambil data guru
+$query = mysqli_query($connect, "SELECT * FROM produk");
+?>
+
 <div class="user-content">
     <div class="produk-opening">
         <h3>Katalog Produk</h3>
@@ -7,10 +14,12 @@
             <button class="btn-cari">Cari</button>
       </div>
     </div>
-    <div class="produk-card">
-        <img src="" alt="">
-        <h4>Nama Produk</h4>
-        <p>Harga</p>
-        <a href="">Pesan →</a>
-    </div>
+    <?php while($produk = mysqli_fetch_assoc($query)) : ?>
+        <div class="produk-card">
+            <img src="gambar/<?= $produk['gambar']; ?>">
+            <h3><?= $produk['nama']; ?></h3>
+            <p>Rp <?= number_format($produk['harga']); ?></p>
+            <a href="buatPesanan.php?id=<?= $produk['id']; ?>">Pesan</a>
+        </div>
+    <?php endwhile; ?>
 </div>
