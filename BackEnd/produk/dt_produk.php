@@ -32,6 +32,7 @@ $query = mysqli_query($connect, "SELECT * FROM produk");
                 <td><?= $data['nama']; ?></td>
                 <td><?= $data['deskripsi']; ?></td>
                 <td><?= $data['harga'];?></td>
+                <td><img src="../../gambar/<?= $data['gambar']; ?>"></td>
                 <td>
                     <a href="?page=editProduk&id=<?=$data['id'];?>" class="btn edit">Edit</a>
                     <a href="?page=hapusProduk&id=<?=$data['id'];?>" class="btn hapus">Hapus</a>
