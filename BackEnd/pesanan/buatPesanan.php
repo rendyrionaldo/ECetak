@@ -25,6 +25,31 @@ if(isset($_POST['pesan'])){
               </script>";
     }
 
-    mysqli_query($connect, "INSERT INTO orders(id_user,id_produk, tema, ukuran, banyak, file_pembeli, catatan, status)
+    mysqli_query($connect, "INSERT INTO pesanan(id_user,id_produk, tema, ukuran, banyak, file_pembeli, catatan, status)
         VALUES('$pembeli', '$produk', '$tema', '$ukuran', '$banyak', '$file_pembeli', '$catatan', '$status')");
 }
+?>
+
+<div>
+        <div>
+                <form method="POST" enctype="multipart/form-data">
+                        <label for="">Produk</label>
+                        <input type="text" class="" placeholder="">
+                        
+                        <label for="">Tema</label>
+                        <input type="text" class="" placeholder="">
+
+                        <label for="">Ukuran</label>
+                        <input type="text" class="" placeholder="">
+                        
+                        <label for="">Banyak</label>
+                        <input type="text" class="" placeholder="">
+                        
+                        <label for="">File Pembeli</label>
+                        <input type="file" class="" placeholder="">
+                        
+                        <label for="">Catatan</label>
+                        <input type="text" class="" placeholder=""> 
+                </form>
+        </div>
+</div>

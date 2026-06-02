@@ -1,5 +1,5 @@
 <div class="user-content">
-    <div class="home-opening">
+    <div class="content-card">
         <h4>Percetakan Digital Kekinian</h4>
         <h3>Cetak Lebih Berkesan dan Mudah</h3>
         <p>Dari kartu nama hingga spanduk besar, menghasilkan setiap pesanan dengan layanan terbaik dan hasil yang memuaskan.</p>

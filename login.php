@@ -1,4 +1,48 @@
-<div class="content-user">
+<?php
+session_start();
+include 'Config/koneksi.php'; 
+
+if (isset($_POST['submit'])){
+    //1. ambil input dari form (asumsi nama input : un dan pw)
+    $username = trim($_POST['usern']);
+    $password = trim($_POST['passw']);
+    $peran = trim($_POST['peran']);
+
+    if (empty($username) || empty($password)){
+        echo "<script>alert ('Kolom tidak boleh kosong!!'); window.history.back();</script>";
+        exit;
+    }
+
+    $query = mysqli_query($connect, "SELECT id, un, pw, peran FROM user WHERE un = '$username'");
+
+    if($data = mysqli_fetch_assoc($query)){
+        if ($password == $data['pw']){
+            // Login Berhasil:simpan data ke session
+            $_SESSION['user_id'] = $data['id'];
+            $_SESSION['username'] = $data['un'];
+            $_SESSION['peran'] = $data['peran'];
+            $_SESSION['is_login'] = true;
+
+            if ($data['peran'] == 'Admin') {
+                header('Location: BackEnd/ad_index.php');
+                exit;
+            } elseif ($data['peran'] == 'Customer') {
+                header('Location: index.php');
+                exit;
+            }
+        } else {
+            echo "<script>alert ('username atau password salah!');
+                window.history.back();</script>";
+                exit;
+        }
+    } else {
+        echo "<script>alert('Username atau password salah!'); window.history.back();</script>";
+        exit;
+    }
+}
+?>
+
+<div class="user-content">
     <div class="card-user">
         <form method="post">
             <fieldset>

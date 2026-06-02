@@ -1,10 +1,10 @@
-< class="user-content">
-    <div class="tentang-opening">
+<div class="user-content">
+    <div class="content-card">
         <h4>Ray Scamander</h4>
         <h2>Melayani Kebutuhan Cetak selama 10+ Tahun</h2>
         <p>Kenali lebih jauh tentang perusahaan kami.</p>
     </div>
-    <div class="tentang-content">
+    <div class="content-card">
         <h3>Informasi Kontak</h3>
         <div class="kontak-card">
             <div class="kontak-icon">
