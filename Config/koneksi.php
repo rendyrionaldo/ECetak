@@ -3,7 +3,7 @@
 $DB_Host = "localhost";
 $DB_User = "root";
 $DB_Password = "";
-$DB_Name = "db_tubesweb";
+$DB_Name = "tubesweb";
 $connect = mysqli_connect($DB_Host, $DB_User, $DB_Password, $DB_Name);
 
 
