@@ -8,12 +8,12 @@
 </head>
 <body>
     <header class="user-header">
-        <div class="nama-percetakan">
-            <h2>Ray Scamander</h2>
-            <h2>Pangkalpinang, Kepulauan Bangka Belitung</h2>
-        </div>
-        <div class="moto-percetakan">
-            <h2>"Kualitas Adalah Prioritas"</h2>
-            <h2>Pelanggan Pun Puas"</h2>
+        <div class="headerWeb">
+            <div class="headerFoto"></div>
+            <div class="headerTeks">
+                <h1>E Percetakan</h1>
+                <p>Kualitas Adalah Prioritas</p>
+            </div>
+            <div class="headerOrnamen">✦ ✦ ✦</div>
         </div>
     </header>

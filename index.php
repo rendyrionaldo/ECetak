@@ -8,8 +8,8 @@ switch ($page) {
     case 'produk':
         $file = 'FrontEnd/frontProduk.php';
         break;
-    case 'kontak':
-        $file = 'FrontEnd/frontKontak.php';
+    case 'login':
+        $file = 'login.php';
         break;
     case 'daftar':
         $file = 'FrontEnd/frontDaftar.php';
