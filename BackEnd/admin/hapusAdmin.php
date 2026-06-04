@@ -7,21 +7,21 @@ if(isset($_GET['id'])){
     $id = $_GET['id'];
 
     //query hapus data berdasarkan id
-    $query = mysqli_query($connect, "DELETE FROM produk WHERE id='$id'");
+    $query = mysqli_query($connect, "DELETE FROM user WHERE id='$id'");
 
     if($query){
         echo "<script>
-                alert('Data produk berhasil dihapus!');
-                window.location.href = '?page=produk';
+                alert('Data admin berhasil dihapus!');
+                window.location.href = '?page=admin';
               </script>";
     } else{
             "<script>
                 alert('Gagal menghapus data: " . mysqli_error($connect) . "';
-                window.location.href = '?page=produk';
+                window.location.href = '?page=admin';
               </script>";
     }
 } else{
     //jika tidak ada id di url, kembalikan ke halaman utama
-    header("Location: ?page=produk");
+    header("Location: ?page=admin");
 }
 ?>
