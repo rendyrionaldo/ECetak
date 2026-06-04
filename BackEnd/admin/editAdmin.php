@@ -27,13 +27,13 @@ if(isset($_POST['update'])){
 }
 ?>
 
-<div class="content">
-    <div class="desc-content">
+<div class="backend-content">
+    <div class="content">
         <h3>Ubah Data Admin</h3>
         <p>Silahkan isi formulir di bawah ini untuk mengubah data admin.</p>
     </div>
 
-    <div class="desc-content">
+    <div class="content2">
         <h3>Form Ubah Data Admin</h3>
         <form action="" method="POST">
             <div class="form-group">

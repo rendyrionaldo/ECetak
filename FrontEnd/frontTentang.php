@@ -35,21 +35,21 @@
     <div class="container-card">
         <h3>Temukan Kami di Media Sosial</h3>
         <div class="fakta2">
-        <div class="medsos-card">
+        <div class="kontak-card">
             <div class="icon">
                 &#128216;
             </div>
             <h4>FaceBook</h4>
             <p>@rayscamender2</p>
         </div>
-        <div class="medsos-card">
+        <div class="kontak-card">
             <div class="icon">
                 &#128248;
             </div>
             <h4>Instagram</h4>
             <p>@rayscam012</p>
         </div>
-        <div class="medsos-card">
+        <div class="kontak-card">
             <div class="icon">
                 &#127925;
             </div>

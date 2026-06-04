@@ -5,12 +5,12 @@ include '../Config/koneksi.php';
 $query = mysqli_query($connect, "SELECT * FROM produk");
 ?>
 
-<div class="content">
-    <div class="desc-content">
+<div class="backend-content">
+    <div class="content">
         <h3>Manajemen Produk</h3><br>
         <p>Lakukan manajemen produk di sini. Admin dapat melakukan penambahan, pengeditan, dan penghapusan produk.</p>
     </div>
-    <div class="desc-content2">
+    <div class="content2">
         <h3>Tabel Produk :</h3><br>
         <a href="?page=tambahProduk" class="btn tambah">+ Tambah Produk</a>
 
@@ -20,6 +20,7 @@ $query = mysqli_query($connect, "SELECT * FROM produk");
                 <th>Nama Produk</th>
                 <th>Deskripsi</th>
                 <th>Harga</th>
+                <th>Gambar</th>
                 <th>Aksi</th>
             </tr>
             <?php
@@ -32,7 +33,7 @@ $query = mysqli_query($connect, "SELECT * FROM produk");
                 <td><?= $data['nama']; ?></td>
                 <td><?= $data['deskripsi']; ?></td>
                 <td><?= $data['harga'];?></td>
-                <td><img src="../../gambar/<?= $data['gambar']; ?>"></td>
+                <td><img src="../gambar/<?= $data['gambar']; ?>"></td>
                 <td>
                     <a href="?page=editProduk&id=<?=$data['id'];?>" class="btn edit">Edit</a>
                     <a href="?page=hapusProduk&id=<?=$data['id'];?>" class="btn hapus">Hapus</a>

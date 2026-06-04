@@ -1,0 +1,205 @@
+:root {
+    --primary: #2563eb;      /* Biru utama */
+    --primary-dark: #1d4ed8;
+    --secondary: #06b6d4;    /* Cyan */
+    --light: #f8fafc;        /* Background */
+    --white: #ffffff;
+    --gray: #64748b14;
+    --border: #e2e8f0;
+    --shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+  width: 100%; 
+  height: 300px; 
+  object-fit: cover;
+  align-items: center; 
+  justify-content: center;
+
+}
+    body{
+       
+        }
+    .backend-header{
+        margin: 15px;
+        padding: 15px;
+        background-color: rgb(48, 111, 245);
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        gap: 80px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+        }
+    .backend-logo img{
+        display: block;
+        }
+
+    .backend-judul{
+        color: #333;
+        }
+    h2{
+        text-align: center;
+        }
+    .dashboard-be {
+        display: flex;
+        width: 100%;
+        min-height: 100vh;
+        }
+    .sidebar {
+        flex: 1;
+        background-color: #5b7ef4;
+        margin: 5px 15px;
+        padding: 10px 10px;
+        border-radius: 8px;
+        text-align: center;
+        }
+
+    .sidebar ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        list-style-type: none;
+        }
+
+    .sidebar a{
+        color: rgb(9, 66, 17);
+        padding: 10px;
+        display: block;
+        text-decoration: none;
+        }
+
+    .sidebar a:hover{
+        background-color: #3a3d3b;
+        color: white;
+        }
+
+    .backend-content {
+        display: flex;
+        flex: 4;
+        flex-direction: column;
+        background-color: #5b7ef4;
+        margin: 5px 15px;
+        padding: 10px 10px;
+        border-radius: 8px;
+        text-align: center;
+        gap: 30px;
+        }
+
+    .content{
+        background: white;
+        padding: 15px;
+        margin-bottom: 15px;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        text-align: justify;
+    }
+
+    .content2{
+        background: white;
+        padding: 15px;
+        margin-bottom: 15px;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        text-align: justify;
+        min-height: 100vh;
+    }
+
+    .bag-total{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        padding: 5px;
+        justify-content: center;
+        width: 100%;
+        }
+
+    .sub-bag-total{
+        flex: 1 1 250px;
+        max-width: 350px;
+        padding:20px;
+        border-radius: 10px;
+        background-color: rgb(248, 235, 248);
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+        text-align: center;
+        }
+
+    .des-bagian{
+        font-weight: bolder;
+        font-size: 20px;
+        }
+
+    .jmlh-bagian{
+        font-size: 20px;
+        color: #055218;
+        }
+
+    footer h3{
+        margin: 15px;
+        padding: 15px;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+        text-align: center;
+    }
+
+    h3{
+        text-align: left;
+        }
+
+/** TABEL STYLING **/
+    .btn {
+            padding: 6px 12px;
+            text-decoration: none;
+            color: white;
+            border-radius: 4px;
+    }
+    .tambah { 
+        background: green; 
+    }
+    .edit { 
+        background: orange; 
+    }
+    .hapus { 
+        background: red; 
+    }
+
+    table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+    }
+    table, th, td {
+            border: 1px solid #ccc;
+            padding: 10px;
+    }
+    th {
+            background: #eee;
+        }
+
+table tr:nth-child(even){background-color: #f9f9f9;}
+table tr:hover {background-color: #f1f1f1;}
+/* form Style */
+.form-group{
+    margin-bottom: 15px;
+}
+
+input[type="text"],
+input[type="email"],
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 5px;
+}
+
+input:focus, select:focus{
+    border-color: #3498db;
+    outline: none;
+}

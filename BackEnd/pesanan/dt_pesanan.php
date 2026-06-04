@@ -7,12 +7,12 @@ $getpembeli = mysqli_query($connect, "SELECT * FROM users");
 $getproduk = mysqli_query($connect, "SELECT * FROM produk");
 ?>
 
-<div class="content">
-    <div class="desc-content">
+<div class="backend-content">
+    <div class="content">
         <h3>Daftar Pesanan</h3><br>
         <p>Daftar pesanan yang masuk dari pelanggan.</p>
     </div>
-    <div class="desc-content2">
+    <div class="content2">
         <h3>Tabel Pesanan :</h3><br>
 
         <table>

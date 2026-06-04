@@ -4,22 +4,21 @@ include 'Config/koneksi.php';
 
 if (isset($_POST['submit'])){
     //1. ambil input dari form (asumsi nama input : un dan pw)
-    $username = trim($_POST['usern']);
-    $password = trim($_POST['passw']);
-    $peran = trim($_POST['peran']);
+    $username = trim($_POST['username']);
+    $password = trim($_POST['password']);
 
     if (empty($username) || empty($password)){
         echo "<script>alert ('Kolom tidak boleh kosong!!'); window.history.back();</script>";
         exit;
     }
 
-    $query = mysqli_query($connect, "SELECT id, un, pw, peran FROM user WHERE un = '$username'");
+    $query = mysqli_query($connect, "SELECT id, username, password, peran FROM user WHERE username = '$username'");
 
     if($data = mysqli_fetch_assoc($query)){
-        if ($password == $data['pw']){
+        if ($password == $data['password']){
             // Login Berhasil:simpan data ke session
             $_SESSION['user_id'] = $data['id'];
-            $_SESSION['username'] = $data['un'];
+            $_SESSION['username'] = $data['username'];
             $_SESSION['peran'] = $data['peran'];
             $_SESSION['is_login'] = true;
 

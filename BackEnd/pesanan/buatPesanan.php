@@ -30,8 +30,8 @@ if(isset($_POST['pesan'])){
 }
 ?>
 
-<div>
-        <div>
+<div class="backend-content">
+        <div class="content2">
                 <form method="POST" enctype="multipart/form-data">
                         <label for="">Produk</label>
                         <input type="text" class="" placeholder="">

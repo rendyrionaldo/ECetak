@@ -7,7 +7,7 @@ if(isset($_POST['simpan'])){
     $pw   = $_POST['pw'];
     $peran = $_POST['peran'];
 
-    $query = mysqli_query($connect, "INSERT INTO tbl_user (un, pw, peran)
+    $query = mysqli_query($connect, "INSERT INTO user (un, pw, peran)
                                     VALUES ('$un', '$pw', '$peran')");
 
     if($query){
@@ -23,13 +23,13 @@ if(isset($_POST['simpan'])){
 }
 ?>
 
-<div class="content">
-    <div class="desc-content">
+<div class="backend-content">
+    <div class="content">
         <h3>Tambah Data Admin</h3>
         <p>Silahkan isi formulir di bawah ini untuk menambah data admin baru.</p>
     </div>
 
-    <div class="desc-content">
+    <div class="content2">
         <form action="" method="POST">
             <div class="form-group">
                 <label>Username :</label><br>

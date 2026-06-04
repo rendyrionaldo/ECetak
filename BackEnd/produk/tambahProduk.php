@@ -34,11 +34,11 @@ if(isset($_POST['tambah'])){
 ?>
 
 <div class="backend-content">
-    <div class="tambah-content">
+    <div class="content">
         <h3>Tambah Produk Penjualan</h3>
         <p>Lengkapi Formulir ini untuk menambahkan produk baru ke dalam daftar penjualan.</p>
     </div>
-    <div class="tambah-content">
+    <div class="content2">
         <h3>Form Tambah Produk :</h3><br>
         <form action="" method="POST" enctype="multipart/form-data">
             <div class="form-group">
