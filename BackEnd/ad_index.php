@@ -41,6 +41,9 @@ switch ($page) {
     case 'hapusAdmin':
         $file = 'admin/hapusAdmin.php';
         break;
+    case 'logout':
+        $file = '../logout.php';
+        break;
     default:
         $file = 'ad_dashboard.php';
         break;

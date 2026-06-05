@@ -41,21 +41,22 @@ if (isset($_POST['submit'])){
 }
 ?>
 
-<div class="user-content">
-    <div class="card-user">
-        <form method="post">
-            <fieldset>
-                <legend>LOGIN</legend>
+<div class="login-wrapper">
+    <div class="login-card">
 
-                <p>Username</p>
-                <input type="text" name="username" require> 
+        <h1>Login Akun</h1>
 
-                <p>Password</p>
-                <input type="password" name="password" require>
+        <form method="post" class="login-form">
 
-                <br><br>
-                <input type="submit" name="submit" value="LOGIN">
-            </fieldset>
+            <label>Username</label>
+            <input type="text" name="username" required>
+
+            <label>Password</label>
+            <input type="password" name="password" required>
+
+            <input type="submit" name="submit" value="LOGIN">
+
         </form>
+
     </div>
 </div>
