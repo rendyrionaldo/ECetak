@@ -46,24 +46,23 @@ if(isset($_POST['update'])){
         <h3>Form Edit Produk :</h3><br>
         <form action="" method="POST" enctype="multipart/form-data">
             <div class="form-group">
-                <label for="nama">Nama Produk:</label><br>
-                <input type="text" name="nama" value="<?= $data['nama']; ?>" required><br><br>
+                <label for="nama">Nama Produk:</label>
+                <input type="text" name="nama" value="<?= $data['nama']; ?>" required><br>
             </div>
             <div class="form-group">
-                <label for="deskripsi">Deskripsi:</label><br>
-                <textarea name="deskripsi" rows="4" required><?= $data['deskripsi']; ?></textarea><br><br>
+                <label for="deskripsi">Deskripsi:</label>
+                <textarea name="deskripsi" rows="4" required><?= $data['deskripsi']; ?></textarea><br>
             </div>
             <div class="form-group">
-                <label for="harga">Harga:</label><br>
-                <input type="number" name="harga" value="<?= $data['harga']; ?>" required><br><br>
+                <label for="harga">Harga:</label>
+                <input type="number" name="harga" value="<?= $data['harga']; ?>" required><br>
             </div>
             <div class="form-group">
-                <label for="gambar">Gambar:</label><br>
-                <?php if ($data['gambar']): ?>
-                    <img src="../gambar/<?= $data['gambar'] ?>"><br>
-                <?php endif; ?>
-                <input type="file" name="gambar" required><br><br>
+                <label for="gambar">Gambar:</label>
+                <input type="file" name="gambar" required><br>
             </div>
-            <button type="submit" name="update" class="btn update">Update Produk</button>
+            <button type="submit" name="update" class="btn edit">Update Produk</button>
+            <a href="?page=produk" class="btn hapus">Batal</a>
         </form>
+    </div>
 </div>

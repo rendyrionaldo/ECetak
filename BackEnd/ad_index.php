@@ -36,13 +36,13 @@ switch ($page) {
         $file = 'admin/editAdmin.php';
         break;
     case 'tambahAdmin':
-        $file = 'admin/tambahAdmin.php';
+        $file = 'admin/buatAdmin.php';
         break;
     case 'hapusAdmin':
         $file = 'admin/hapusAdmin.php';
         break;
     case 'logout':
-        $file = '../logout.php';
+        header("Location: ../logout.php");
         break;
     default:
         $file = 'ad_dashboard.php';

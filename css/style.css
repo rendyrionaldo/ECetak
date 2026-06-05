@@ -22,6 +22,9 @@ body{
     background:var(--light);
     color:#1e293b;
     line-height:1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 a{
@@ -52,12 +55,11 @@ header {
     padding: 28px 40px;
 }
 
-.headerFoto {
+.headerFoto img{
     width: 90px;
     height: 90px;
     border-radius: 50%;
     border: 3px solid var(--secondary);
-    background: var(--coklat) url() center/cover no-repeat;
 }
 
 .headerTeks h1 {
@@ -204,7 +206,11 @@ nav {
 /* Tombol Lihat Katalog */
 .btn-accent {
     background-color: var(--primary);
-    color: #000000;
+    color: #ffffff;
+}
+
+.btn-accent a{
+    color: #ffffff;
 }
 
 .btn-accent:hover {
@@ -215,9 +221,14 @@ nav {
 /* Tombol Pesan Sekarang */
 .btn-white {
     background-color: #ffffff;
-    color: #0f172a;
     border: 2px solid var(--secondary);
 }
+
+.btn-white a{
+    text-decoration: none;
+    color: var(--primary-dark);
+}
+
 
 .btn-white:hover {
     background-color: #f1f5f9;
@@ -446,12 +457,20 @@ nav {
     display:flex;
     flex-direction:column;
     gap:18px;
+    justify-content:center;
 }
 
 .login-form label{
     font-weight:600;
     color:#334155;
     font-size:.95rem;
+}
+
+.login-form p{
+    font-weight:600;
+    color:#334155;
+    font-size:.9rem;
+    text-align:center;
 }
 
 .login-form input[type="text"],
@@ -495,6 +514,87 @@ nav {
     box-shadow:0 10px 25px rgba(37,99,235,.25);
 }
 
+.pesanan-content{
+    display:flex;
+    justify-content:center;
+    padding:40px 20px;
+}
+
+.pesanan-card{
+    width:100%;
+    max-width:700px;
+    background:#fff;
+    padding:40px;
+    border-radius:20px;
+    box-shadow:0 15px 35px rgba(0,0,0,.08);
+}
+
+.pesanan-card h1{
+    text-align:center;
+    color:var(--primary-dark);
+    margin-bottom:30px;
+    font-size:2rem;
+}
+
+.pesanan-form{
+    display:flex;
+    flex-direction:column;
+    gap:18px;
+}
+
+.pesanan-form label{
+    font-weight:600;
+    color:#334155;
+}
+
+.pesanan-form input[type="text"],
+.pesanan-form textarea, .pesanan-form select{
+    width:100%;
+    padding:14px;
+    border:1px solid #cbd5e1;
+    border-radius:12px;
+    background:#f8fafc;
+    font-size:1rem;
+    transition:.3s;
+}
+
+.pesanan-form input[type="text"]:focus,
+.pesanan-form textarea:focus{
+    outline:none;
+    border-color:var(--primary);
+    background:#fff;
+    box-shadow:0 0 0 4px rgba(37,99,235,.12);
+}
+
+.pesanan-form input[type="file"]{
+    padding:12px;
+    border:2px dashed var(--secondary);
+    border-radius:12px;
+    background:#f8fafc;
+}
+
+.pesanan-form input[type="submit"]{
+    margin-top:10px;
+    padding:14px;
+    border:none;
+    border-radius:12px;
+    background:linear-gradient(
+        135deg,
+        var(--primary),
+        var(--secondary)
+    );
+    color:white;
+    font-weight:700;
+    font-size:1rem;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.pesanan-form input[type="submit"]:hover{
+    transform:translateY(-2px);
+    box-shadow:0 10px 25px rgba(37,99,235,.25);
+}
+
 footer{
     background: var(--primary);
     border-top: 3px solid var(--secondary);
@@ -503,4 +603,134 @@ footer{
     color: rgba(255,255,255,0.7);
     font-size: 1rem;
     line-height: 1.8;
+    margin-top: auto;
+}
+
+.input-cari{
+    flex:1;
+    background: var(--primary-dark);
+    border:1px solid var(--secondary);
+    color:var(--light);
+    padding:13px 20px;
+    border-radius:50px;
+    font-size:14px;
+    outline:none;
+    transition:all .2s;
+    font-family:var(--font-body);
+}
+.input-cari::placeholder{
+    color:var(--secondary);
+}
+
+.btn-cari{
+    background:var(--primary-dark);
+    border:1.5px solid var(--secondary);
+    color:var(--light);
+    padding:9px 20px;
+    border-radius:50px;
+    font-size:13px;
+    font-weight:500;
+    transition:all .2s;
+    font-family:var(--font-body)
+}
+.btn-cari:hover{
+    background:var(--secondary);
+    border-color:var(--secondary);
+    color:var(--light);
+    box-shadow:0 4px 14px rgba(21,101,192,.3)
+}
+
+table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+    }
+    table, th, td {
+            border: 1px solid #ccc;
+            padding: 10px;
+    }
+    th {
+            background: #eee;
+        }
+
+table tr:nth-child(even){background-color: #f9f9f9;}
+table tr:hover {background-color: #f1f1f1;}
+
+.btn {  
+        margin-top: 3px;
+            display: inline-block;
+        padding: 6px 12px;
+            text-decoration: none;
+            color: white;
+            border-radius: 4px;
+    }
+    .edit { 
+        background: orange; 
+    }
+    .batal { 
+        background: red;
+        text-align: center;
+    }
+
+    .confirm-wrapper{
+    min-height:70vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.confirm-card{
+    background:#fff;
+    width:100%;
+    max-width:500px;
+    padding:40px;
+    border-radius:20px;
+    text-align:center;
+    box-shadow:0 10px 30px rgba(0,0,0,.1);
+}
+
+.confirm-icon{
+    font-size:60px;
+    margin-bottom:15px;
+}
+
+.confirm-card h2{
+    color:#dc2626;
+    margin-bottom:10px;
+}
+
+.confirm-card p{
+    color:#64748b;
+    margin-bottom:25px;
+}
+
+.confirm-action{
+    display:flex;
+    justify-content:center;
+    gap:15px;
+}
+
+.btn-cancel{
+    background:#dc2626;
+    color:white;
+    padding:12px 20px;
+    border-radius:10px;
+    font-weight:600;
+    border: none;
+}
+
+.btn-no{
+    background:#e2e8f0;
+    color:#1e293b;
+    padding:12px 20px;
+    border-radius:10px;
+    font-weight:600;
+}
+
+.btn-cancel:hover{
+    background:#b91c1c;
+}
+
+.btn-no:hover{
+    background:#cbd5e1;
 }

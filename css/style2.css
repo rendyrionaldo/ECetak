@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap');
+
 :root {
     --primary: #2563eb;      /* Biru utama */
     --primary-dark: #1d4ed8;
@@ -13,6 +15,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:var(--light);
+    color:#1e293b;
+    line-height:1.6;
 }
 
 img {
@@ -23,21 +32,21 @@ img {
   justify-content: center;
 
 }
-    body{
-       
-        }
+
     .backend-header{
         margin: 15px;
         padding: 15px;
-        background-color: rgb(48, 111, 245);
+        background-color: var(--primary);
         border-radius: 20px;
         display: flex;
         align-items: center;
         gap: 80px;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+        box-shadow: 0 4px 6px var(--gray);
         }
     .backend-logo img{
         display: block;
+        width: 80px;
+        height: 80px;
         }
 
     .backend-judul{
@@ -53,7 +62,7 @@ img {
         }
     .sidebar {
         flex: 1;
-        background-color: #5b7ef4;
+        background-color: var(--primary);
         margin: 5px 15px;
         padding: 10px 10px;
         border-radius: 8px;
@@ -68,22 +77,22 @@ img {
         }
 
     .sidebar a{
-        color: rgb(9, 66, 17);
+        color: var(--white);
         padding: 10px;
         display: block;
         text-decoration: none;
         }
 
     .sidebar a:hover{
-        background-color: #3a3d3b;
-        color: white;
+        background-color: var(--light);
+        color: var(--secondary);
         }
 
     .backend-content {
         display: flex;
         flex: 4;
         flex-direction: column;
-        background-color: #5b7ef4;
+        background-color: var(--primary);
         margin: 5px 15px;
         padding: 10px 10px;
         border-radius: 8px;
@@ -139,24 +148,19 @@ img {
         color: #055218;
         }
 
-    footer h3{
-        margin: 15px;
-        padding: 15px;
-        border-radius: 8px;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
-        text-align: center;
-    }
-
     h3{
         text-align: left;
         }
 
 /** TABEL STYLING **/
-    .btn {
-            padding: 6px 12px;
+    .btn {  
+        margin-top: 3px;
+            display: inline-block;
+        padding: 6px 12px;
             text-decoration: none;
             color: white;
             border-radius: 4px;
+            border: none;
     }
     .tambah { 
         background: green; 
@@ -201,5 +205,42 @@ select {
 
 input:focus, select:focus{
     border-color: #3498db;
+    outline: none;
+}
+
+footer{
+    background: var(--primary);
+    border-top: 3px solid var(--secondary);
+    padding: 10px 40px;
+    text-align: center;
+    color: rgba(255,255,255,0.7);
+    font-size: 1rem;
+    line-height: 1.8;
+}
+footer h3{
+    text-align: center;
+}
+
+.form-group{ 
+    margin-bottom: 5px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+ 
+.form-group input, .form-group textarea, .form-group select {
+    width: 100%;
+    padding: 11px 15px;
+    border: 2px solid var(--secondary);
+    border-radius: 8px;
+    font-size: 0.9rem;
+    font-family: 'Lato', sans-serif;
+    color: #333;
+    background: var(--krem);
+    transition: border 0.2s;
     outline: none;
 }

@@ -5,8 +5,8 @@
         <p class="hero-desc">Percetakan digital &amp; offset terpercaya di Palembang. Kartu nama, brosur, spanduk, hingga packaging — semuanya kami kerjakan dengan presisi tinggi.</p>
         
         <div class="home-btn">
-            <button class="btn btn-accent" onclick="goPage('produk')">&#127912; Lihat Katalog</button>
-            <button class="btn btn-white" onclick="goPage('pesanan')">Pesan Sekarang →</button>
+            <button class="btn btn-accent"><a href="?page=produk">&#127912; Lihat Katalog</a></button>
+            <button class="btn btn-white"><a href="?page=pesanan">Pesan Sekarang →</a></button>
         </div>
     </div>
 

@@ -22,7 +22,7 @@ if(isset($_POST['tambah'])){
                   </script>";  
         } else {
             echo "<script>
-                    alert ('Gagal; menambahkan data: " .mysqli_error($connect)."');
+                    alert ('Gagal menambahkan data: " .mysqli_error($connect)."');
                   </script>";  
         }          
     } else {
@@ -42,21 +42,22 @@ if(isset($_POST['tambah'])){
         <h3>Form Tambah Produk :</h3><br>
         <form action="" method="POST" enctype="multipart/form-data">
             <div class="form-group">
-                <label for="nama">Nama Produk:</label><br>
-                <input type="text" name="nama" required><br><br>
+                <label for="nama">Nama Produk:</label>
+                <input type="text" name="nama" required><br>
             </div>
             <div class="form-group">
-                <label for="deskripsi">Deskripsi:</label><br>
-                <textarea name="deskripsi" rows="4" required></textarea><br><br>
+                <label for="deskripsi">Deskripsi:</label>
+                <textarea name="deskripsi" rows="4" required></textarea><br>
             </div>
             <div class="form-group">
-                <label for="harga">Harga:</label><br>
-                <input type="number" name="harga" required><br><br>
+                <label for="harga">Harga:</label>
+                <input type="number" name="harga" required><br>
             </div>
             <div class="form-group">
-                <label for="gambar">Gambar:</label><br>
-                <input type="file" name="gambar" required><br><br>
+                <label for="gambar">Gambar:</label>
+                <input type="file" name="gambar" required><br>
             </div>
             <button type="submit" name="tambah" class="btn tambah">Tambah Produk</button>
         </form>
+    </div>
 </div>

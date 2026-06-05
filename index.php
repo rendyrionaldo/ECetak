@@ -1,4 +1,5 @@
 <?php
+session_start();
 $page = $_GET['page'] ?? 'home';
 
 switch ($page) {
@@ -12,7 +13,19 @@ switch ($page) {
         $file = 'login.php';
         break;
     case 'daftar':
-        $file = 'FrontEnd/frontDaftar.php';
+        $file = 'daftarUser.php';
+        break;
+    case 'buatPesanan':
+        $file = 'BackEnd/pesanan/buatPesanan.php';
+        break;
+    case 'pesanan':
+        $file = 'FrontEnd/frontPesanan.php';
+        break;
+    case 'editPesanan':
+        $file = 'BackEnd/pesanan/ubahPesanan.php';
+        break;
+    case 'batalPesanan':
+        $file = 'BackEnd/pesanan/batalPesanan.php';
         break;
     default:
         $file = 'FrontEnd/frontHome.php';

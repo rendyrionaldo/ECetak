@@ -9,7 +9,9 @@
 <body>
     <header class="user-header">
         <div class="headerWeb">
-            <div class="headerFoto"></div>
+            <div class="headerFoto">
+                <img src="gambar/logo.png" alt="Logo E Percetakan">
+            </div>
             <div class="headerTeks">
                 <h1>E Percetakan</h1>
                 <p>Kualitas Adalah Prioritas</p>

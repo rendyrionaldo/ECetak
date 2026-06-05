@@ -8,13 +8,13 @@ $data = mysqli_fetch_assoc($get_data);
 
 //Jika tombol update diklik
 if(isset($_POST['update'])){
-    $un   = $_POST['un'];
-    $pw   = $_POST['pw'];
+    $un   = $_POST['username'];
+    $pw   = $_POST['password'];
     $peran = $_POST['peran'];
 
     $query = mysqli_query($connect, "UPDATE user SET 
-                                    un='$un', 
-                                    pw='$pw',
+                                    username='$un', 
+                                    password='$pw',
                                     peran='$peran'
                                     WHERE id='$id'");
 
@@ -37,13 +37,12 @@ if(isset($_POST['update'])){
         <h3>Form Ubah Data Admin</h3>
         <form action="" method="POST">
             <div class="form-group">
-                <label>Username :</label><br>
-                <input type="text" name="un" value="<?=$data['un']; ?>" required>
+                <label>Username :</label>
+                <input type="text" name="username" value="<?=$data['username']; ?>" required>
             </div>
-            <br>
             <div class="form-group">
-                <label>Password :</label><br>
-                <input type="password" name="pw" value="<?= $data['pw']; ?>" required>
+                <label>Password :</label>
+                <input type="password" name="password" value="<?= $data['password']; ?>" required>
             </div>
             <button type="submit" name="update" class="btn edit">Update Data</button>
             <a href="?page=admin" class="btn hapus">Batal</a>

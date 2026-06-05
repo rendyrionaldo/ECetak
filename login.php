@@ -1,5 +1,4 @@
 <?php
-session_start();
 include 'Config/koneksi.php'; 
 
 if (isset($_POST['submit'])){
@@ -55,8 +54,7 @@ if (isset($_POST['submit'])){
             <input type="password" name="password" required>
 
             <input type="submit" name="submit" value="LOGIN">
-
+            <p>Belum punya akun? Daftar <a href="?page=daftar">di sini</a></p>
         </form>
-
     </div>
 </div>

@@ -9,7 +9,7 @@
 <body>
     <header class="backend-header">
         <div class="backend-logo">
-            <img src="../gambar/" width="100" height="100">
+            <img src="../gambar/logo.png">
         </div>
         <div class="backend-judul">
             <h2>Ray Scamander</h2>
