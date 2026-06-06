@@ -60,7 +60,7 @@ $data = mysqli_fetch_assoc($get_data);
                         <label for="">Catatan</label>
                         <textarea name="catatan" cols="30" rows="4" placeholder="Masukkan catatan tambahan..."></textarea> 
 
-                        <button type="submit" name="pesan" class="btn tambah">Tambah Pesanan</button>
+                        <button type="submit" name="pesan" class="btn tambah">Buat Pesanan</button>
                 </form>
         </div>
 </div>

@@ -11,10 +11,12 @@ if(isset($_POST['tambah'])){
     $folder = '../gambar/'.$file_name;
 
     //query untuk memasukan data ke tabel_produk
-    $query = mysqli_query($connect, "INSERT INTO produk (nama,deskripsi,harga,gambar)
-                                    VALUES ('$nama', '$deskripsi', '$harga', '$file_name')");
+    
 
     if(move_uploaded_file($file_tmp, $folder)){
+
+        $query = mysqli_query($connect, "INSERT INTO produk (nama,deskripsi,harga,gambar)
+                                    VALUES ('$nama', '$deskripsi', '$harga', '$file_name')");
         if($query){    
             echo "<script>
                     alert ('Data berhasil ditambahkan!');

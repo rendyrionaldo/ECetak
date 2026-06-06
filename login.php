@@ -48,10 +48,10 @@ if (isset($_POST['submit'])){
         <form method="post" class="login-form">
 
             <label>Username</label>
-            <input type="text" name="username" required>
+            <input type="text" name="username" >
 
             <label>Password</label>
-            <input type="password" name="password" required>
+            <input type="password" name="password">
 
             <input type="submit" name="submit" value="LOGIN">
             <p>Belum punya akun? Daftar <a href="?page=daftar">di sini</a></p>

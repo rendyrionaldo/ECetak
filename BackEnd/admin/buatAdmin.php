@@ -30,7 +30,7 @@ if(isset($_POST['simpan'])){
     </div>
 
     <div class="content2">
-        <form action="" method="POST">
+        <form method="post">
             <div class="form-group">
                 <label>Username :</label>
                 <input type="text" name="username" required placeholder="Masukkan Username"><br>

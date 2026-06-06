@@ -12,7 +12,7 @@
             <img src="../gambar/logo.png">
         </div>
         <div class="backend-judul">
-            <h2>Ray Scamander</h2>
+            <h2>E Percetakan</h2>
             <h2>Admin</h2>
         </div>
     </header>

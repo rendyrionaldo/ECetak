@@ -10,12 +10,10 @@ $data = mysqli_fetch_assoc($get_data);
 if(isset($_POST['update'])){
     $un   = $_POST['username'];
     $pw   = $_POST['password'];
-    $peran = $_POST['peran'];
 
     $query = mysqli_query($connect, "UPDATE user SET 
                                     username='$un', 
-                                    password='$pw',
-                                    peran='$peran'
+                                    password='$pw'
                                     WHERE id='$id'");
 
     if($query){

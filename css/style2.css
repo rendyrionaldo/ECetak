@@ -44,11 +44,12 @@ img {
         box-shadow: 0 4px 6px var(--gray);
         }
     .backend-logo img{
-        display: block;
-        width: 80px;
-        height: 80px;
-        }
-
+        width: 90px;
+        height: 90px;
+        border-radius: 50%;
+        border: 3px solid var(--secondary);
+}
+        
     .backend-judul{
         color: #333;
         }

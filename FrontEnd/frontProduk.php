@@ -24,10 +24,6 @@ if ($search) {
         <h3>Katalog Produk</h3>
         <p>Temukan berbagai produk yang sesuai dengan kebutuhan anda. Mulai dari kebutuhan kantor, acara, pribadi, dll.</p>
         <p>Temukan spanduk, name tag, banner, mug, nota, dan lainnya lalu pesan secara online dan tinggal ambil di toko kami tanpa repot!</p>
-        <div class="search-bar">
-            <input type="text" class="input-cari" placeholder="🔍 Cari produk...">
-            <button class="btn-cari">Cari</button>
-        </div>
     </div>
     <div class="produk-container">
     <?php while($produk = mysqli_fetch_assoc($query)) : ?>
@@ -42,6 +38,6 @@ if ($search) {
                 </div>
             </div>
         </div>
-    </div>
     <?php endwhile; ?>
+    </div>
 </div>

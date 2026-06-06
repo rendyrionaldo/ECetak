@@ -85,9 +85,9 @@
     </div>
 
     <div class="container-card">
-    <div class="fakta3">
         <h2>Visi Dan Misi</h2>
-            <div class="kontak-card">
+    <div class="fakta3">
+        <div class="kontak-card">
             <div class="icon">🎯</div>
             <h4>Visi</h4>
             <p>
@@ -95,7 +95,6 @@
             layanan percetakan berkualitas dan inovatif bagi seluruh pelanggan.
             </p>
         </div>
-        <br>
         <div class="kontak-card">
             <div class="icon">🚀</div>
             <h4>Misi</h4>

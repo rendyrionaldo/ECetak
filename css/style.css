@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap');
 
 :root {
-    --primary: #2563eb;      /* Biru utama */
+    --primary: #2563eb;      
     --primary-dark: #1d4ed8;
-    --secondary: #06b6d4;    /* Cyan */
-    --light: #f8fafc;        /* Background */
+    --secondary: #06b6d4;    
+    --light: #f8fafc;        
     --white: #ffffff;
     --gray: #64748b14;
     --border: #e2e8f0;
@@ -131,26 +131,12 @@ nav {
         background: #ecf0f1;
     }
 
-    /* .content-card {
-        background: var(--white);
-        padding: 20px;
-        border-radius: 10px;
-        box-shadow: var(--shadow);
-        border: 1px solid var(--border);
-    }
-
-    .content-card h4{
-        font-size: 1.2rem;
-        margin-bottom: 12px;
-        color: var(--primary-dark);
-    } */
-
     .user-opening {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: var(--light); /* Warna dasar super dark blue sesuai gambar */
-    background-image: radial-gradient(circle at 80% 20%, #1a2a40 0%, transparent 50%); /* Efek glow halus di background */
+    background-color: var(--light);
+    background-image: radial-gradient(circle at 80% 20%, #1a2a40 0%, transparent 50%); 
     padding: 60px 10% ;
     min-height: 80vh;
     gap: 40px;
@@ -179,10 +165,9 @@ nav {
     color: #38bdf8;
 }
 
-/* Deskripsi di bawah judul */
 .hero-desc {
     font-size: 1.1rem;
-    color: var(--primary); /* Warna abu-abu soft agar teks nyaman dibaca */
+    color: var(--primary); 
     line-height: 1.6;
     margin-bottom: 40px;
     max-width: 500px;
@@ -197,13 +182,12 @@ nav {
     padding: 14px 28px;
     font-size: 1rem;
     font-weight: 600;
-    border-radius: 50px; /* Membuat tombol rounded capsular */
+    border-radius: 50px; 
     border: none;
     cursor: pointer;
     transition: all 0.3s ease;
 }
 
-/* Tombol Lihat Katalog */
 .btn-accent {
     background-color: var(--primary);
     color: #ffffff;
@@ -218,7 +202,6 @@ nav {
     box-shadow: 0 0 20px rgba(0, 180, 216, 0.4);
 }
 
-/* Tombol Pesan Sekarang */
 .btn-white {
     background-color: #ffffff;
     border: 2px solid var(--secondary);
@@ -333,7 +316,7 @@ nav {
     margin-bottom: 32px;
     }
 
-    .fakta3 {
+.fakta3 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 16px;
@@ -613,39 +596,6 @@ footer{
     margin-top: auto;
 }
 
-.input-cari{
-    flex:1;
-    background: var(--primary-dark);
-    border:1px solid var(--secondary);
-    color:var(--light);
-    padding:13px 20px;
-    border-radius:50px;
-    font-size:14px;
-    outline:none;
-    transition:all .2s;
-    font-family:var(--font-body);
-}
-.input-cari::placeholder{
-    color:var(--secondary);
-}
-
-.btn-cari{
-    background:var(--primary-dark);
-    border:1.5px solid var(--secondary);
-    color:var(--light);
-    padding:9px 20px;
-    border-radius:50px;
-    font-size:13px;
-    font-weight:500;
-    transition:all .2s;
-    font-family:var(--font-body)
-}
-.btn-cari:hover{
-    background:var(--secondary);
-    border-color:var(--secondary);
-    color:var(--light);
-    box-shadow:0 4px 14px rgba(21,101,192,.3)
-}
 
 table {
             width: 100%;
@@ -670,6 +620,9 @@ table tr:hover {background-color: #f1f1f1;}
             text-decoration: none;
             color: white;
             border-radius: 4px;
+    }
+    .tambah { 
+        background: green; 
     }
     .edit { 
         background: orange; 
