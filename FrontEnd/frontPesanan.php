@@ -3,6 +3,15 @@ include 'Config/koneksi.php';
 
 $user_id = $_SESSION['user_id'];
 
+if (!isset($_SESSION['user_id'])) {
+    echo "
+    <script>
+        alert('Silakan login terlebih dahulu untuk mengakses halaman pesanan!');
+        window.location.href='?page=login';
+    </script>
+    ";
+    exit;
+}
 $getorder = mysqli_query($connect,"
     SELECT
         p.*,

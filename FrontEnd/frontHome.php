@@ -24,7 +24,7 @@
             <p>Cetak apapun untuk kebutuhan bisnis, harian, dan acara - brosur, spanduk, poster, buku, nota, dan lainnya.</p>
         </div>
         <div class="home-card">
-            <h3>Desain Custom &#127912;;</h3>
+            <h3>Desain Custom &#127912;</h3>
             <p>Sesuaikan desain produk dengan kebutuhan dan kriteria yang anda inginkan.</p>
         </div>
         <div class="home-card">
@@ -37,4 +37,32 @@
         </div>
         </div>
     </div>
+    <br>
+    <div class="home-layanan">
+    <h3>Pencapaian Kami</h3>
+
+    <div class="fakta">
+
+        <div class="home-card">
+            <h3>500+</h3>
+            <p>Pesanan Selesai</p>
+        </div>
+
+        <div class="home-card">
+            <h3>300+</h3>
+            <p>Pelanggan Aktif</p>
+        </div>
+
+        <div class="home-card">
+            <h3>10 Tahun</h3>
+            <p>Pengalaman</p>
+        </div>
+
+        <div class="home-card">
+            <h3>98%</h3>
+            <p>Tingkat Kepuasan</p>
+        </div>
+
+    </div>
+</div>
 </div>

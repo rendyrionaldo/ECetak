@@ -333,6 +333,13 @@ nav {
     margin-bottom: 32px;
     }
 
+    .fakta3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin-bottom: 32px;
+    }
+
 .kontak-card {
     background: var(--gray);
     border-radius: 10px;
