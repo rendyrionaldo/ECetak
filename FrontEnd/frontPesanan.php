@@ -28,7 +28,7 @@ if(!$getorder){
 <div class="user-content">
     <div class="container-card">
         <h3>Pesanan Saya</h3>
-        <p>Daftar pesanan yang telah Anda buat. Klik "Lihat Detail" untuk melihat informasi lengkap tentang pesanan Anda.</p>
+        <p>Daftar pesanan yang telah Anda buat. Lakukan pengeditan pesanan dengan memilih tombol edit.</p>
         <div class="pesanan-tabel">
             <table>
             <tr>
