@@ -6,6 +6,7 @@
         <li><a href="index.php?page=pesanan">Pesanan</a></li>
         <li><a href="index.php?page=login">Login</a></li>
         <li><a href="index.php?page=daftar">Daftar</a></li>
+        <li><a href="index.php?page=logout">Logout</a></li>
     </li>
     </ul>
 </nav>

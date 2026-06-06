@@ -12,6 +12,9 @@ switch ($page) {
     case 'login':
         $file = 'login.php';
         break;
+    case 'logout':
+        $file = 'logout.php';
+        break;
     case 'daftar':
         $file = 'daftarUser.php';
         break;
