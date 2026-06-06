@@ -1,7 +1,6 @@
 <?php
 include 'Config/koneksi.php';
 
-// Ambil ID dari URL
 $id = $_GET['id'] ?? 0;
 $user = $_SESSION['user_id'];
 

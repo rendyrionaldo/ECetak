@@ -43,7 +43,6 @@ if(!$getorder){
                 <th>Aksi</th>
             </tr>
             <?php
-            //BARIS 2 - MENAMPILKAN ISI DATABASE
             $no = 1;
             while($data = mysqli_fetch_assoc($getorder)){
             ?>

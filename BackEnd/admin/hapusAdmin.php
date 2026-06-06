@@ -1,12 +1,9 @@
 <?php
-//koneksi tetap diperlukan ke query
 include '../Config/koneksi.php';
 
-//menangkap ID dari URl
 if(isset($_GET['id'])){
     $id = $_GET['id'];
 
-    //query hapus data berdasarkan id
     $query = mysqli_query($connect, "DELETE FROM user WHERE id='$id'");
 
     if($query){
@@ -21,7 +18,6 @@ if(isset($_GET['id'])){
               </script>";
     }
 } else{
-    //jika tidak ada id di url, kembalikan ke halaman utama
     header("Location: ?page=admin");
 }
 ?>

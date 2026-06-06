@@ -1,7 +1,6 @@
 <?php
 include '../Config/koneksi.php';
 
-//ambil data guru
 $query = mysqli_query($connect, "SELECT * FROM produk");
 ?>
 
@@ -24,7 +23,6 @@ $query = mysqli_query($connect, "SELECT * FROM produk");
                 <th>Aksi</th>
             </tr>
             <?php
-            //BARIS 2 - MENAMPILKAN ISI DATABASE
             $no = 1;
             while ($data = mysqli_fetch_assoc($query)){
             ?>

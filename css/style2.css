@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap');
 
 :root {
-    --primary: #2563eb;      /* Biru utama */
+    --primary: #2563eb;     
     --primary-dark: #1d4ed8;
-    --secondary: #06b6d4;    /* Cyan */
-    --light: #f8fafc;        /* Background */
+    --secondary: #06b6d4;    
+    --light: #f8fafc;        
     --white: #ffffff;
     --gray: #64748b14;
     --border: #e2e8f0;
@@ -153,7 +153,6 @@ img {
         text-align: left;
         }
 
-/** TABEL STYLING **/
     .btn {  
         margin-top: 3px;
             display: inline-block;
@@ -188,7 +187,8 @@ img {
 
 table tr:nth-child(even){background-color: #f9f9f9;}
 table tr:hover {background-color: #f1f1f1;}
-/* form Style */
+
+
 .form-group{
     margin-bottom: 15px;
 }

@@ -1,12 +1,11 @@
 <?php
 include '../Config/koneksi.php';
 
-// Ambil ID dari URL
 $id = $_GET['id'];
 $get_data = mysqli_query($connect, "SELECT * FROM user WHERE id='$id'");
 $data = mysqli_fetch_assoc($get_data);
 
-//Jika tombol update diklik
+
 if(isset($_POST['update'])){
     $un   = $_POST['username'];
     $pw   = $_POST['password'];

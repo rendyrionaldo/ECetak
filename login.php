@@ -2,7 +2,6 @@
 include 'Config/koneksi.php'; 
 
 if (isset($_POST['submit'])){
-    //1. ambil input dari form (asumsi nama input : un dan pw)
     $username = trim($_POST['username']);
     $password = trim($_POST['password']);
 
@@ -15,7 +14,6 @@ if (isset($_POST['submit'])){
 
     if($data = mysqli_fetch_assoc($query)){
         if ($password == $data['password']){
-            // Login Berhasil:simpan data ke session
             $_SESSION['user_id'] = $data['id'];
             $_SESSION['username'] = $data['username'];
             $_SESSION['peran'] = $data['peran'];

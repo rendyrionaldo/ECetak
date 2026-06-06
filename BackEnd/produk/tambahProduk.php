@@ -1,7 +1,6 @@
 <?php
 include "../Config/koneksi.php";
 
-// Cek apakah tombol simpan sudah diklik
 if(isset($_POST['tambah'])){
     $nama   = $_POST['nama'];
     $deskripsi  = $_POST['deskripsi'];
@@ -9,9 +8,6 @@ if(isset($_POST['tambah'])){
     $file_name = $_FILES['gambar']['name'];
     $file_tmp = $_FILES['gambar']['tmp_name'];
     $folder = '../gambar/'.$file_name;
-
-    //query untuk memasukan data ke tabel_produk
-    
 
     if(move_uploaded_file($file_tmp, $folder)){
 

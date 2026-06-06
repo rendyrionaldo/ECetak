@@ -1,22 +1,7 @@
 <?php
 include 'Config/koneksi.php';
 
-//ambil data guru
 $query = mysqli_query($connect, "SELECT * FROM produk");
-
-$search = trim($_GET['input-cari'] ?? '');
-
-// Hitung total data untuk pagination
-if ($search) {
-    $countStmt = $connect->prepare("
-        SELECT COUNT(*) FROM produk 
-        WHERE nama LIKE :search
-    ");
-    $countStmt->execute([':search' => "%$search%"]);
-} else {
-    $countStmt = $connect->prepare("SELECT COUNT(*) FROM produk");
-    $countStmt->execute();
-}
 ?>
 
 <div class="user-content">

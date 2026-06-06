@@ -62,8 +62,6 @@ if (isset($_POST['update'])) {
                 <label>Foto Saat Ini:</label>
                 <?php if (!empty($data['gambar'])): ?>
                     <a href="../gambar/<?= $data['gambar']; ?>" target="_blank">Foto Produk</a> 
-                <?php else: ?>
-                    <p style="color:#999; font-size:13px;">Belum ada foto</p>
                 <?php endif; ?>
             </div>
             <div class="form-group">
